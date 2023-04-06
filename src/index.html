@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digital Clock</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sm:h-[130px] h-[230px] px-10 bg-primary flex sm:flex-row flex-col rounded-b-lg relative z-10">
+
+        <div class="flex flex-1 sm:justify-start justify-center items-center sm:py-0 pt-3">
+            <h1 class="text-3xl font-bold underline text-white">
+                Digital Clock!
+            </h1>
+        </div>
+
+        <div class="flex flex-1 sm:justify-end justify-center items-center sm:py-0 pb-6">
+            <div class="bg-blue-gradient w-[85px] h-[85px] rounded-full cursor-pointer p-[3px] mr-6">
+                <div class="bg-primary w-[100%] h-[100%] rounded-full flex flex-col justify-center items-center">
+                    <br />
+                    <span class="text-white text-lg leading-4" id="hours">00</span>
+                    <span class="text-dimWhite text-sm mb-2">Hours</span>
+                </div>
+            </div>
+
+            <div class="bg-blue-gradient w-[85px] h-[85px] rounded-full cursor-pointer p-[3px] mr-6">
+                <div class="bg-primary w-[100%] h-[100%] rounded-full flex flex-col justify-center items-center">
+                    <br />
+                    <span class="text-white text-lg leading-4" id="minutes">00</span>
+                    <span class="text-dimWhite text-sm mb-2">Minutes</span>
+                </div>
+            </div>
+
+            <div class="bg-blue-gradient w-[85px] h-[85px] rounded-full cursor-pointer p-[3px]">
+                <div class="bg-primary w-[100%] h-[100%] rounded-full flex flex-col justify-center items-center">
+                    <br />
+                    <span class="text-white text-lg leading-4" id="seconds">00</span>
+                    <span class="text-dimWhite text-sm mb-2">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="h-[20px] px-10 bg-blue-gradient rotate-180 rounded-lg -mt-3 relative z-0">
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
